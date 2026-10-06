@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Đăng ký - Vườn Xanh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="topbar-mini"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M1 3h15v13H1z" />
+                <path d="M16 8h4l3 3v5h-7z" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg> Miễn phí ship đơn từ 200.000đ · Hotline 0900 123 456</div>
+        <div class="container nav"><a class="logo" href="index.html"><svg class="ic" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                    <path d="M2 21c0-3 1.9-5.4 5-6" />
+                </svg> Vườn Xanh</a><input type="checkbox" id="menu-toggle"><label for="menu-toggle"
+                class="burger">☰</label>
+            <nav class="menu"><a href="index.html">Trang chủ</a><a href="danhmuc.html">Cửa hàng</a><a
+                    href="gioithieu.html">Giới thiệu</a><a href="tintuc.html">Tin tức</a><a href="lienhe.html">Liên
+                    hệ</a><a class="auth" href="dangnhap.html">Đăng nhập</a><a class="btn btn-sm"
+                    href="dangky.html">Đăng ký</a></nav>
+        </div>
+    </header>
+    <div class="auth-wrap">
+        <div class="auth-art">
+            <h1><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                    <path d="M2 21c0-3 1.9-5.4 5-6" />
+                </svg> Vườn Xanh</h1>
+            <p style="font-size:1.1rem">Tham gia cùng 12.000+ khách hàng!</p>
+            <ul>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <rect x="3" y="8" width="18" height="4" />
+                        <path d="M12 8v13M19 12v9H5v-9" />
+                        <path d="M7.5 8a2.5 2.5 0 0 1 0-5C11 3 12 8 12 8s1-5 4.5-5a2.5 2.5 0 0 1 0 5" />
+                    </svg> Tặng voucher 10% đơn đầu tiên</li>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                        <path d="M2 21c0-3 1.9-5.4 5-6" />
+                    </svg> Rau củ sạch mỗi ngày</li>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M1 3h15v13H1z" />
+                        <path d="M16 8h4l3 3v5h-7z" />
+                        <circle cx="5.5" cy="18.5" r="2.5" />
+                        <circle cx="18.5" cy="18.5" r="2.5" />
+                    </svg> Miễn phí giao đơn từ 200.000đ</li>
+            </ul>
+        </div>
+        <div class="auth-form">
+            <div class="auth-box">
+                <h2>Tạo tài khoản</h2>
+                <p style="color:var(--m);margin-bottom:14px">Chỉ mất 1 phút để bắt đầu</p>
+                <form action="dangnhap.html">
+                    <div class="fld"><label>Họ và tên</label><input type="text" placeholder="Nguyễn Văn A" required>
+                    </div>
+                    <div class="row2">
+                        <div class="fld"><label>Email</label><input type="email" placeholder="email@gmail.com" required>
+                        </div>
+                        <div class="fld"><label>Số điện thoại</label><input type="tel" placeholder="0900123456"
+                                pattern="[0-9]{9,11}" title="9-11 chữ số"></div>
+                    </div>
+                    <div class="row2">
+                        <div class="fld"><label>Mật khẩu</label><input type="password" placeholder="Tối thiểu 6 ký tự"
+                                minlength="6"></div>
+                        <div class="fld"><label>Nhập lại mật khẩu</label><input type="password" placeholder="Nhập lại"
+                                minlength="6"></div>
+                    </div>
+                    <div class="fld"><label>Giới tính</label><select>
+                            <option>Nữ</option>
+                            <option>Nam</option>
+                            <option>Khác</option>
+                        </select></div><label style="font-size:.9rem"><input type="checkbox" required> Tôi đồng ý với
+                        điều khoản &amp; chính sách bảo mật</label><br><br><button class="btn btn-green btn-block">Đăng
+                        ký</button>
+                </form>
+                <p class="alt">Đã có tài khoản? <a href="dangnhap.html">Đăng nhập</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

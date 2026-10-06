@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Đăng nhập - Vườn Xanh</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+    <header class="header">
+        <div class="topbar-mini"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M1 3h15v13H1z" />
+                <path d="M16 8h4l3 3v5h-7z" />
+                <circle cx="5.5" cy="18.5" r="2.5" />
+                <circle cx="18.5" cy="18.5" r="2.5" />
+            </svg> Miễn phí ship đơn từ 200.000đ · Hotline 0900 123 456</div>
+        <div class="container nav"><a class="logo" href="index.html"><svg class="ic" viewBox="0 0 24 24"
+                    aria-hidden="true">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                    <path d="M2 21c0-3 1.9-5.4 5-6" />
+                </svg> Vườn Xanh</a><input type="checkbox" id="menu-toggle"><label for="menu-toggle"
+                class="burger">☰</label>
+            <nav class="menu"><a href="index.html">Trang chủ</a><a href="danhmuc.html">Cửa hàng</a><a
+                    href="gioithieu.html">Giới thiệu</a><a href="tintuc.html">Tin tức</a><a href="lienhe.html">Liên
+                    hệ</a><a class="auth" href="dangnhap.html">Đăng nhập</a><a class="btn btn-sm"
+                    href="dangky.html">Đăng ký</a></nav>
+        </div>
+    </header>
+    <div class="auth-wrap">
+        <div class="auth-art">
+            <h1><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                    <path d="M2 21c0-3 1.9-5.4 5-6" />
+                </svg> Vườn Xanh</h1>
+            <p style="font-size:1.1rem">Chào mừng bạn quay lại!</p>
+            <ul>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg> Theo dõi đơn hàng thời gian thực</li>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg> Tích điểm đổi ưu đãi</li>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg> Lưu sản phẩm yêu thích</li>
+                <li><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M20 6 9 17l-5-5" />
+                    </svg> Thanh toán nhanh chỉ 1 chạm</li>
+            </ul>
+        </div>
+        <div class="auth-form">
+            <div class="auth-box">
+                <h2>Đăng nhập</h2>
+                <p style="color:var(--m)">Chọn loại tài khoản để tiếp tục</p><input type="radio" name="role" id="r-kh"
+                    checked><input type="radio" name="role" id="r-ad">
+                <div class="tabs"><label for="r-kh"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                            <circle cx="12" cy="7" r="4" />
+                        </svg> Khách hàng</label><label for="r-ad"><svg class="ic" viewBox="0 0 24 24"
+                            aria-hidden="true">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                        </svg> Quản trị viên</label></div>
+                <form class="f-kh" action="khachhang/index.html">
+                    <div class="fld"><label>Email</label><input type="email" placeholder="email@gmail.com" required>
+                    </div>
+                    <div class="fld"><label>Mật khẩu</label><input type="password" placeholder="••••••" minlength="6">
+                    </div><label style="font-size:.9rem"><input type="checkbox"> Ghi nhớ đăng nhập</label> <a
+                        href="dangky.html" style="float:right;color:var(--g);font-size:.9rem">Quên mật
+                        khẩu?</a><br><br><button class="btn btn-green btn-block">Đăng nhập</button>
+                </form>
+                <form class="f-ad" action="admin/index.html">
+                    <div class="hint"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                            <rect x="3" y="11" width="18" height="11" rx="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg> Tài khoản demo admin:<br><b>admin@vuonxanh.vn</b> / <b>admin123</b></div>
+                    <div class="fld"><label>Email quản trị</label><input type="email" placeholder="admin@vuonxanh.vn"
+                            pattern="admin@vuonxanh\.vn" title="Sai tài khoản admin (xem gợi ý phía trên)"></div>
+                    <div class="fld"><label>Mật khẩu</label><input type="password" placeholder="••••••"
+                            pattern="admin123" title="Sai mật khẩu admin"></div><button class="btn btn-block"
+                        style="background:#0f172a;border-color:#0f172a">Vào trang quản trị</button>
+                </form>
+                <p class="alt">Chưa có tài khoản? <a href="dangky.html">Đăng ký ngay</a> · <a href="index.html">Về trang
+                        chủ</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

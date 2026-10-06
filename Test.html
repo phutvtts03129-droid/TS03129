@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Quản lý sản phẩm</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER / BANNER ================= -->
+
+    <header>
+
+        <div class="banner-content">
+
+            <p class="banner-small">
+                ✦ PRODUCT MANAGEMENT ✦
+            </p>
+
+            <h1>
+                QUẢN LÝ SẢN PHẨM
+            </h1>
+
+            <p class="banner-description">
+
+                Quản lý danh sách sản phẩm một cách đơn giản,
+                trực quan và chuyên nghiệp
+
+            </p>
+
+            <div class="banner-info">
+
+                <span>
+                    📦 8 sản phẩm
+                </span>
+
+                <span>
+                    🏷️ Quản lý kho
+                </span>
+
+                <span>
+                    📊 Thống kê
+                </span>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ================= NỘI DUNG ================= -->
+
+    <div class="container">
+
+
+        <!-- ================= THỐNG KÊ ================= -->
+
+        <div class="section-title">
+
+            <span class="icon">
+                📊
+            </span>
+
+            <div>
+
+                <h2>
+                    Tổng quan sản phẩm
+                </h2>
+
+                <p>
+                    Theo dõi tình trạng sản phẩm trong kho
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="thong-ke">
+            <div class="box box-total">
+                <div class="box-icon">📦</div>
+                <div class="box-content">
+                    <h3> Tổng sản phẩm</h3>
+                    <div id="tongSP" class="so"></div>
+                    <p>Tất cả sản phẩm</p>
+                </div>
+            </div>
+
+
+            <div class="box box-stock">
+                <div class="box-icon">✅</div>
+                <div class="box-content">
+                    <h3>Còn hàng</h3>
+                    <div id="conHang" class="so">0</div>
+                    <p>Sản phẩm đang có sẵn</p>
+                </div>
+            </div>
+
+
+            <div class="box box-empty">
+                <div class="box-icon">⚠️</div>
+                <div class="box-content">
+                    <h3>Hết hàng</h3>
+                    <div id="hetHang" class="so">0</div>
+                    <p>Cần nhập thêm hàng</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- ================= CHỨC NĂNG ================= -->
+
+        <div class="buttons">
+
+            <div class="function-title">
+
+                <div class="function-icon">
+                    ⚙️
+                </div>
+
+                <div>
+
+                    <h3>
+                        Chức năng
+                    </h3>
+
+                    <p>
+                        Lọc và sắp xếp danh sách sản phẩm
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <div class="button-list">
+                <button onclick="loc('all')">🏠 Tất cả</button>
+                <button onclick="loc('conhang')">✅ Còn hàng</button>
+                <button onclick="loc('giatang')">📈 Giá tăng dần</button>
+                <button onclick="loc('giamgia')">🏷️ Giảm giá 10%</button>
+            </div>
+
+        </div>
+
+
+
+        <!-- ================= DANH SÁCH SẢN PHẨM ================= -->
+
+        <div class="section-title product-title">
+            <span class="icon">🛍️</span>
+            <div>
+            <h2>Danh sách sản phẩm</h2>
+             <p>Các sản phẩm hiện đang có trong hệ thống</p>
+            </div>
+        </div>
+
+
+
+        <div id="danhSachSP" class="products"></div>
+
+        <div class="section-title top-title">
+            <span class="icon">🏆</span>
+        <div>
+                <h2>Top 3 sản phẩm có giá thấp nhất</h2>
+                <p>Những sản phẩm có mức giá tốt nhất</p>
+            </div>
+        </div>
+
+        <div id="top3" class="products"></div>
+      </div>
+
+
+
+
+
+      <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                🛍️ PRODUCT STORE
+            </div>
+            <p>
+                Hệ thống quản lý sản phẩm
+            </p>
+            <div class="footer-line"></div>
+            <p class="copyright">
+                © 2026 Product Management |
+                Designed with HTML & CSS
+            </p>
+
+
+        </div>
+
+    </footer>
+
+
+    <script src="Test.js"></script>
+
+
+</body>
+
+</html>

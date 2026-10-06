@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Quản lý nhân viên - Vườn Xanh</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/panel.css">
+    <link rel="icon" href="../images/favicon.svg">
+</head>
+
+<body class="panel adm"><input type="checkbox" id="side-toggle">
+    <aside class="side"><a class="brand" href="tong-quan.html" style="border:0"><svg class="ic" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                <path d="M2 21c0-3 1.9-5.4 5-6" />
+            </svg> Vườn Xanh<br><small style="font-weight:400;font-size:.8rem;color:#94a3b8">Quản trị viên</small></a>
+        <h5>Tổng quan</h5><a href="tong-quan.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+            </svg> Bảng điều khiển</a>
+        <h5>Bán hàng</h5><a href="don-hang.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                <path d="M14 2v6h6M8 13h8M8 17h8" />
+            </svg> Đơn hàng</a><a href="khuyen-mai.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L2 12V2h10l8.6 8.6a2 2 0 0 1 0 2.8z" />
+                <path d="M7 7h.01" />
+            </svg> Khuyến mãi</a><a href="danh-gia.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z" />
+            </svg> Đánh giá</a>
+        <h5>Sản phẩm</h5><a href="san-pham.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.5 19 2c1 2 2 4.2 2 8 0 5.5-4.8 10-10 10z" />
+                <path d="M2 21c0-3 1.9-5.4 5-6" />
+            </svg> Sản phẩm</a><a href="them-san-pham.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 5v14M5 12h14" />
+            </svg> Thêm sản phẩm</a><a href="danh-muc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <rect x="3" y="3" width="7" height="7" />
+                <rect x="14" y="3" width="7" height="7" />
+                <rect x="14" y="14" width="7" height="7" />
+                <rect x="3" y="14" width="7" height="7" />
+            </svg> Danh mục</a><a href="kho-hang.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path
+                    d="m16.5 9.4-9-5.2M21 16V8a2 2 0 0 0-1-1.7l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.7l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.7z" />
+                <path d="M3.3 7 12 12l8.7-5M12 22V12" />
+            </svg> Kho hàng</a>
+        <h5>Con người</h5><a href="khach-hang.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8" />
+            </svg> Khách hàng</a><a href="nhan-vien.html" class=on><svg class="ic" viewBox="0 0 24 24"
+                aria-hidden="true">
+                <rect x="2" y="7" width="20" height="14" rx="2" />
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg> Nhân viên</a>
+        <h5>Hệ thống</h5><a href="bao-cao.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M18 20V10M12 20V4M6 20v-6" />
+            </svg> Báo cáo</a><a href="cai-dat.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="3" />
+                <path
+                    d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1" />
+            </svg> Cài đặt</a>
+        <h5>Khác</h5><a href="index.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M2 12h20M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20z" />
+            </svg> Trang chủ</a><a href="danhmuc.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4zM3 6h18" />
+                <path d="M16 10a4 4 0 0 1-8 0" />
+            </svg> Cửa hàng</a><a href="../dangnhap.html"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+            </svg> Đăng xuất</a>
+    </aside><label class="shade" for="side-toggle"></label>
+    <div class="p-top"><label class="p-burger" for="side-toggle">☰</label>
+        <h3>Quản lý nhân viên</h3>
+        <div class="p-user">
+            <div class="ava">A</div><span>Admin</span>
+        </div>
+    </div>
+    <main class="p-main">
+        <h1>Quản lý nhân viên</h1>
+        <p class="sub">Phân quyền nhân sự nội bộ.</p>
+        <div class="card">
+            <h2>Nhân viên</h2>
+            <div class="tbl-wrap">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Họ tên</th>
+                            <th>Email</th>
+                            <th>Vai trò</th>
+                            <th>Trạng thái</th>
+                            <th>Thao tác</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Nguyễn Văn An</td>
+                            <td>an@vuonxanh.vn</td>
+                            <td>Quản trị viên</td>
+                            <td><span class="bd ok">Hoạt động</span></td>
+                            <td><a class="act" href="#">Sửa</a></td>
+                        </tr>
+                        <tr>
+                            <td>Trần Thị Bình</td>
+                            <td>binh@vuonxanh.vn</td>
+                            <td>Quản lý kho</td>
+                            <td><span class="bd ok">Hoạt động</span></td>
+                            <td><a class="act" href="#">Sửa</a><a class="act del" href="#">Xóa</a></td>
+                        </tr>
+                        <tr>
+                            <td>Lê Hoàng Cường</td>
+                            <td>cuong@vuonxanh.vn</td>
+                            <td>Giao nhận</td>
+                            <td><span class="bd ok">Hoạt động</span></td>
+                            <td><a class="act" href="#">Sửa</a><a class="act del" href="#">Xóa</a></td>
+                        </tr>
+                        <tr>
+                            <td>Phạm Mỹ Duyên</td>
+                            <td>duyen@vuonxanh.vn</td>
+                            <td>CSKH</td>
+                            <td><span class="bd ok">Hoạt động</span></td>
+                            <td><a class="act" href="#">Sửa</a><a class="act del" href="#">Xóa</a></td>
+                        </tr>
+                        <tr>
+                            <td>Ngô Thanh Sơn</td>
+                            <td>son@vuonxanh.vn</td>
+                            <td>Kế toán</td>
+                            <td><span class="bd bad">Tạm khóa</span></td>
+                            <td><a class="act" href="#">Sửa</a><a class="act del" href="#">Xóa</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
